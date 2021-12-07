@@ -1,0 +1,237 @@
+*{
+	padding: 0; 
+	margin: 0;
+	border: 0;
+}
+*,*::before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+/*------------------------------------*/
+
+body{
+	background:  url('img/ellipse-1-copy.png') 50% 130px no-repeat;
+	z-index: 0;
+	overflow: scroll;
+}
+    
+.video-bg {
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+  }
+ 
+  
+  .video-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 140vh;
+    object-fit: cover;
+	opacity: 50%
+	
+  }
+  .effects {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0,0,0,0.01);
+  }
+  
+  .video-bg__content {
+    z-index: 2;
+    color: black;
+    font-size: 50px;
+    	;
+    
+  }
+  .main {
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+.content {
+padding: 168px 0px 137px 0px;
+max-width: 841px;
+margin: 0px auto;
+
+
+}
+.content-top {
+	
+
+}
+.content-top__category {
+
+	
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 14px;
+	color: rgba(39, 61, 70, 0.6);
+	letter-spacing: 2.8px;
+	opacity: 0.6;
+	margin: 0px 0px 17px 0px;
+
+}
+.content-top__title {
+  font-family: TimesNewRomanPSMT;
+  font-size: 36px;
+  text-align: center;
+  color: #273d46;
+  line-height: 1.39;
+	
+	
+  }
+  .content-top__title {
+	max-width: 721px;
+	margin: 0 auto;
+  }
+.content-image {
+	margin-top: 65px;
+	margin-bottom: 90px;
+	
+
+
+
+}
+.content-image__item {
+	border: 10px solid white;
+	box-shadow: 0px 15px 65px 0 rgba(15, 16, 16, 0.15);
+
+}
+.content-image__item img{
+ max-width: 100%;
+}
+.content-bottom {
+margin: 0px 45px 0px 45px;
+}
+.content-bottom__text {
+	
+	
+
+	
+	font-family: TimesNewRomanPSMT;
+	font-size: 24px;
+	line-height: 1.67;
+	letter-spacing: normal;
+	text-align: left;
+	color: #273d46;
+	margin: 0 auto;
+}
+.content-bottom__text p{
+	margin: 0px 0px 40px 0px;
+}
+.content-bottom-info {
+}
+
+.content-bottom-info-list li::before {
+	content: url('img/icons/check-icon.png');
+    padding-right: 9px;
+}
+
+.content-bottom-info-list li
+{
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-bottom-info-list li:nth-child(1){
+	margin: 48px 0 0px 0px;
+	text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.3);	
+	font-size: 20px;
+	
+	color: #273d46;
+}
+
+
+
+.content-bottom-info-list li:nth-child(2){
+	margin: 8px 0px 0px 0px;
+	font-size: 20px;
+	font-style: italic;
+	color: #80b7b3;
+}
+.content-bottom-info-list li:nth-child(3){
+	margin: 15px 0px 0px 0px;
+	font-size: 20px;
+	
+	color: #273d46;
+	font-weight: 600;
+}
+.content-bottom-info-list li:nth-child(4){
+	margin: 15px 0px 0px 0px;
+	font-size: 20px;
+	
+	color: rgba(39, 61, 70, 0.3);
+	text-decoration-line: line-through;
+}
+.content-bottom-info-list li:nth-child(4) span{
+	opacity: 0.3;
+}
+.content-bottom-info__link {
+
+height: 44px;
+line-height: 44px;
+text-align: center;
+border-radius: 50px;
+font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 2.8px;
+  font-size: 14px;
+  
+  background-color: rgba(128, 183, 179);
+  padding-right: 30px;
+  padding-left: 30px;
+  -webkit-box-shadow: 0px 5px 1px rgba(0, 0, 0, 1);
+  box-shadow: 0px 5px 1px rgba(0, 0, 0, 1);
+  color: #e8e8e8;
+  display: inline-block  ;
+  margin-top: 60px;
+}
+
+.content-bottom-info__link:hover{
+background-color: red;
+}
+.content-bottom-info__link span {
+	background: url('img/shape-2.svg') right no-repeat; 
+	
+	padding-right: 50px;
+}
